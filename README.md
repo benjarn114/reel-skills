@@ -1,6 +1,6 @@
 # Reel Skills
 
-Dos [Claude Code skills](https://docs.claude.com/en/docs/claude-code/skills) destiladas del análisis de 113 reels de Instagram guardados sobre IA/Claude, vibecoding, marketing y edición de video corto. En vez de guardar cada reel como una nota suelta, se comparó el contenido repetido entre creadores, se descartó lo redundante, y se consolidó lo validado en dos skills reusables.
+Dos [Claude Code skills](https://docs.claude.com/en/docs/claude-code/skills) destiladas del análisis de 135 reels de Instagram guardados sobre IA/Claude, vibecoding, marketing y edición de video corto. En vez de guardar cada reel como una nota suelta, se comparó el contenido repetido entre creadores, se descartó lo redundante, y se consolidó lo validado en dos skills reusables.
 
 ## Skills
 
@@ -21,7 +21,7 @@ Claude Code las detecta automáticamente y las usa cuando el pedido encaja con l
 
 ## El análisis completo
 
-- [`DOCUMENTO.md`](DOCUMENTO.md) — las 113 fichas de análisis (cuenta, caption, transcripción, qué enseña, cómo aplicarlo) que son la fuente de cada ítem de las skills. Cada ítem de las skills cita el número de post de donde salió.
+- [`DOCUMENTO.md`](DOCUMENTO.md) — las 135 fichas de análisis (cuenta, caption, transcripción, qué enseña, cómo aplicarlo) que son la fuente de cada ítem de las skills. Cada ítem de las skills cita el número de post de donde salió.
 - [`cosas-para-tener-en-cuenta.md`](cosas-para-tener-en-cuenta.md) — todo lo que no se convirtió en skill (vocabulario de prompts para imagen/video con IA, teoría de color, microinteracciones de UI, herramientas mencionadas pero gateadas detrás de "comentá para que te lo mande por DM").
 
 No se incluye el audio/video descargado de los reels originales (son ~64MB y no hay motivo para redistribuirlos) — solo texto de caption y transcripción, usados para el análisis.
@@ -29,3 +29,20 @@ No se incluye el audio/video descargado de los reels originales (son ~64MB y no 
 ## Todo mi setup de Claude Code
 
 - [`my-claude-setup/`](my-claude-setup/) — todas las skills instaladas a nivel usuario (menos las que ya vienen por default con Claude Code), la lista de plugins instalados con su marketplace de origen, y el `CLAUDE.md` global. Pensado para reinstalar todo en otra PC — ver [`my-claude-setup/PLUGINS.md`](my-claude-setup/PLUGINS.md) para los pasos. No incluye API keys, settings.json ni nada de otras carpetas/proyectos personales.
+
+### Prompt para instalar todo de una (pasalo a tus amigos)
+
+Clonar el repo y, dentro de la carpeta clonada, pegarle esto a Claude Code:
+
+```
+Tengo este repo de "reel-skills" clonado acá. Quiero que:
+1. Copies todo el contenido de my-claude-setup/skills/ a ~/.claude/skills/, y también
+   las 2 skills de skills/ (reel-script-writer y vibecoding-launch-checklist). Si alguna
+   ya existe con ese nombre en mi ~/.claude/skills/, avisame antes de pisarla.
+2. Leas my-claude-setup/PLUGINS.md y me preguntes, plugin por plugin, si quiero instalarlo
+   (son de terceros, no los instales solo porque están en la lista).
+3. Me des un resumen corto de qué skills copiaste quedan listas para usar tal cual, y
+   cuáles dependen de una cuenta/API de pago externa (ElevenLabs, Higgsfield, HeyGen,
+   Canva, etc.) que yo todavía no tengo configurada, para saber qué me sirve ya y qué no.
+4. No toques ni fusiones my-claude-setup/CLAUDE.md con mi CLAUDE.md sin preguntarme antes.
+```
