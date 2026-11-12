@@ -44,11 +44,7 @@ Checklist acumulado de varios reels guardados sobre errores típicos de apps hec
 - Paso por staging antes de producción; idealmente rollout gradual (canary) y rollback automático si falla.
 
 ## 6. Legal / compliance (pedirle esto a la IA antes de publicar)
-Checklist de 20 puntos mencionado en los reels, agrupado:
-- Política de privacidad y términos de servicio visibles.
-- Accesibilidad básica (contraste, labels, navegación por teclado).
-- Banner/flujo de consentimiento de cookies si corresponde.
-- Licencias de assets/librerías de terceros en orden.
+Checklist de 20 puntos para que la IA lo verifique antes de lanzar (no es asesoría legal — qué aplica depende de dónde estén vos y tus usuarios): política de privacidad, términos de servicio, política de reembolso, política de cookies, banner de consentimiento de cookies, revisar los consentimientos de los formularios, no recolectar datos innecesarios, auditar SDKs de terceros, eliminar dark patterns, eliminar costos ocultos, eliminar reviews falsas, eliminar afirmaciones no respaldadas, texto alternativo de accesibilidad, ratio de contraste de color, navegación por teclado, datos de contacto del negocio visibles, consentimiento de edad si se recolectan datos de menores, link de "darse de baja" en emails, licencias de fuentes/imágenes en orden, opción de solicitud de borrado de datos.
 
 ## 7. Señales de "AI slop" a corregir (pulido de UX)
 - Copy genérico que "suena a IA" sin voz propia, buzzwords vacíos, el patrón "no es X, es Y", em dash por todos lados.
@@ -59,10 +55,13 @@ Checklist de 20 puntos mencionado en los reels, agrupado:
 - Formularios que piden de más o no son accesibles por teclado; embeds de terceros rotos; información de negocio con datos placeholder.
 - Checklist de 20 mejoras de producto: accesibilidad, estados de formularios (error/loading/success), navegación clara, performance percibida, detalles de UI que faltan en todo MVP recién salido de un agente.
 
-## 8. Antes de instalar una skill/tool de terceros (supply chain)
+## 8. Mega-prompt de seguridad para pedirle a la IA (punto de partida, no sustituto de este checklist)
+"No quiero que mi sitio vibe-coded sea hackeado: escondé mis API keys, revisá mis variables de entorno, protegé mis rutas de admin, agregá autenticación correcta con acceso solo a lo que corresponde a cada usuario, sanitizá mis formularios, protegé contra XSS, asegurá mis endpoints de API, agregá rate limiting, revisá mis configuraciones core, apagá el modo debug, agregá security headers, actualizá mis dependencias, revisá archivos expuestos, asegurá mi base de datos, hasheá las contraseñas correctamente, revisá mi historial de Git por secretos filtrados, y corré una auditoría de seguridad completa." No confiar ciegamente en que el agente hizo todo bien solo porque dijo que lo hizo — pedir evidencia concreta de cada punto (o verificarlo manualmente) en vez de asumirlo.
+
+## 9. Antes de instalar una skill/tool de terceros (supply chain)
 No instalar a ciegas una skill o MCP solo porque la recomendaron en un reel o post: puede traer código malicioso que se ejecuta con los mismos permisos que el agente. Escanearla primero con una herramienta de seguridad dedicada (ej. Skill Spectre de NVIDIA) antes de dejar que toque el proyecto, e idealmente automatizarlo como un paso que corre solo ante cualquier descarga de skill/herramienta nueva, frenando y pidiendo confirmación si encuentra algo grave.
 
 ## Cómo usarlo
 Repasar las secciones aplicables al proyecto y, para cada punto que falte, pedírselo directamente al agente de código en lenguaje natural (ej. "agregá rate limiting al login y un tope de gasto de $100/mes a los endpoints que llaman al modelo") — son todos cambios "vibecodeables", no requieren un plugin especial.
 
-Fuente: análisis de reels guardados en `~/Downloads/reels-analysis/DOCUMENTO.md` (posts #13, #15, #22, #24, #25, #30, #31, #32, #37, #45, #46, #51, #59, #75, #86, #102, #108, #109 del documento).
+Fuente: análisis de reels guardados en `~/Downloads/reels-analysis/DOCUMENTO.md` (posts #13, #15, #22, #24, #25, #30, #31, #32, #37, #45, #46, #51, #59, #75, #86, #102, #108, #109, #119, #126 del documento).
