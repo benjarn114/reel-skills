@@ -1,6 +1,6 @@
 # Análisis de Reels de Instagram — Documento final
 
-113 reels guardados, analizados con `yt-dlp` (video/caption) + Groq Whisper (transcripción de audio). (2 posts de la Tanda 4 no se pudieron descargar — borrados o privados — ver `links.md`.)
+135 reels guardados, analizados con `yt-dlp` (video/caption) + Groq Whisper (transcripción de audio). (3 posts no se pudieron descargar — borrados o privados: 2 de la Tanda 4, 1 de la Tanda 5 — ver `links.md`.)
 
 ---
 
@@ -1710,6 +1710,314 @@ Menciona que convirtió todo esto en una guía completa (pedirla comentando "GUI
 **Herramientas/skills que menciona:** Claude (connectors nativos para calendario/email/archivos), MCP servers custom escritos por Claude para dispositivos físicos (domótica, impresora 3D), un dispositivo ESP32 como interfaz física, y la app de Claude con voz nativa.
 
 **Cómo aplicarlo:** Como idea general (no hay instrucciones técnicas en el video): se puede pedirle a Claude que escriba un MCP server custom para controlar un dispositivo propio con API o en la red local (ej. domótica, impresoras), de forma similar a como ya existen MCP servers de terceros conectados en este mismo entorno (Vercel, Supabase, Notion, etc.) — la diferencia es que en este caso los MCP los escribe el propio Claude a medida en vez de usar uno ya publicado.
+
+---
+
+### 114. Admanage AI — https://www.instagram.com/p/DfpJG2HOc16/
+
+**Caption:** "Comentá 'CLONE' y te mando la herramienta." #metaads #facebookads #facebookadvertising #marketing
+
+**Transcripción:** Explica una estructura de formatos de ads de Meta organizada por etapa del funnel. Top of funnel: respuestas a Instagram Stories (no parecen ad, sirven para trackear audiencia fría), ads censurados/blur como CTA de curiosidad, y entrevistas de calle (generan muchas impresiones). Middle of funnel: formato "5 razones por las que funciona" (argumento estructurado) y ads con estadísticas (apuntan a audiencias más tibias, apelan a sus puntos de dolor). Bottom of funnel: alerta de "poco stock" para generar urgencia/escasez. Cierra diciendo que construyó una herramienta de IA para clonar estos formatos para la marca del espectador, y que comente "clone" para que se la mande.
+
+**Qué dice / enseña:** Enseña una clasificación real de formatos de ad orientados a cada etapa del funnel de marketing (TOF/MOF/BOF), con el razonamiento de por qué cada formato funciona en esa etapa. El contenido educativo en sí es completo y concreto, pero termina en un gate clásico de generación de leads ("comentá para que te mande la herramienta") — la herramienta de IA mencionada no se describe ni se muestra, es solo un gancho de captura de contacto.
+
+**Herramientas/skills que menciona:** Formatos de Meta Ads (respuestas a Stories, ads censurados/blur, entrevistas de calle, "5 razones", ads con estadísticas, alertas de stock bajo); una herramienta de IA propia para clonar estos formatos (no detallada, gateada detrás de un comentario).
+
+**Cómo aplicarlo:** Mapear los ads propios según la etapa del funnel: usar formatos de baja fricción y curiosidad (Stories, blur, calle) para audiencia fría; formatos de prueba/argumento (razones, estadísticas) para audiencia tibia que ya conoce el producto; y triggers de urgencia (stock bajo) para cerrar en el fondo del funnel. La "herramienta de IA" mencionada no es accesible sin comentar, así que no se puede evaluar ni replicar directamente.
+
+---
+
+### 115. Omar Elsayed (egymarrr) — https://www.instagram.com/p/Dd7VOqppMHY/
+
+**Caption:** "Conviértete en un cerrador (closer) de ventas de la noche a la mañana." #fyp #florida #sales #onlinemoney #motivation
+
+**Transcripción:** Hay audio hablado, pero la transcripción de Whisper devuelve solo un fragmento incoherente: "Ready? N F B B I I Space C C I I A A Space". No es una transcripción fiel de un discurso completo — parece corresponder a un video muy corto o a un segmento con sonido no claro (posible letreo/spelling en pantalla, efecto de sonido o audio de baja calidad), no a una explicación hablada real de cómo "cerrar ventas".
+
+**Qué dice / enseña:** No se puede determinar con certeza qué enseña el reel: el audio real no es inteligible en la transcripción obtenida, y el caption es solo una frase gancho genérica de motivación en ventas sin contenido técnico. No hay suficiente información fiel (caption + transcripción) para afirmar qué método o técnica de venta se enseña.
+
+**Herramientas/skills que menciona:** Ninguna identificable con certeza a partir del caption o la transcripción disponible.
+
+**Cómo aplicarlo:** No aplica — el contenido real no es accesible/inteligible a partir de los datos obtenidos (transcripción incoherente y caption sin detalle técnico), así que no hay base real para dar una recomendación de aplicación.
+
+---
+
+### 116. Eric Does Ecom — https://www.instagram.com/p/Dfk3IDoPWAy/
+
+**Caption:** "El video editing cambió para siempre." #ecommerce #metaads #dropshipping #aiugc #aiads
+
+**Transcripción:** Explica paso a paso cómo hacer video ads de dropshipping usando el nuevo modelo Claude Fable 5.2, de forma gratuita y sin suscripciones de video con IA, todo "localmente con Claude". Paso 1: pedirle a Claude que escriba un guion de 30-60 segundos que atrape rápido al viewer y convenza de comprar sin sonar demasiado vendedor. Paso 2: convertir ese guion en audio con la función text-to-speech de ElevenLabs (11labs), que da 10.000 créditos gratis por mes. Paso 3: pedirle a Claude que escanee YouTube, TikTok e Instagram buscando videos del producto para usar como b-roll, priorizando clips limpios sin overlays de texto, y descargarlos con la librería de Python yt-dlp. Paso 4: que Claude escanee y categorice esos clips y los superponga sobre el guion donde correspondan, y que genere subtítulos estilo Hormozi y una pista de audio sincronizada con lo que pasa en el video. Afirma que así no se necesita Higgsfield, CapCut ni edición manual.
+
+**Qué dice / enseña:** Enseña un workflow concreto end-to-end para producir video ads de dropshipping combinando Claude (Fable 5.2) para guion y orquestación, ElevenLabs para voz y yt-dlp para conseguir b-roll de producto desde redes. Es un flujo plausible y con pasos específicos (no gateado), aunque no muestra la ejecución real en pantalla ni los prompts exactos que usaría para cada paso.
+
+**Herramientas/skills que menciona:** Claude Fable 5.2, ElevenLabs (text-to-speech, plan gratuito de 10.000 créditos/mes), yt-dlp (descarga de video desde YouTube/TikTok/Instagram), subtítulos estilo "Hormozi".
+
+**Cómo aplicarlo:** Replicar el flujo: 1) pedir a Claude un guion corto orientado a conversión; 2) generar el audio con el plan free de ElevenLabs; 3) usar yt-dlp (vía Claude o manualmente) para bajar clips limpios del producto desde redes como b-roll; 4) pedirle a Claude que categorice y ordene esos clips sobre el guion; 5) agregar subtítulos estilo Hormozi y sincronizar audio. Atención: usar b-roll de otras cuentas/redes para ads propios puede tener implicancias de derechos de autor que el reel no aborda.
+
+---
+
+### 117. James Goldbach — https://www.instagram.com/p/DfnNdhBj5yA/
+
+**Caption:** "Comentá 'FABLE PROMPT' y te mando el desglose completo para tu agente." Fable 5.2 no quiere los prompts que escribiste para modelos anteriores — 10 cambios directo de la guía de prompting de Anthropic.
+
+**Transcripción:** Fable 5.2 acaba de salir y hay que cambiar el estilo de prompting. 1) Decirle que el codebase es suyo: Anthropic mostró que esto hace que el modelo efectivamente fusione código duplicado, básicamente refactorizándolo para hacerlo más eficiente. 2) Agregar una línea sobre "terminar el trabajo" en el archivo de reglas: esto reduce cuánto el agente se detiene cuando todavía tiene cosas por hacer. 3) Decir "no pienses" no hace que el modelo no piense — hay que bajar el nivel de esfuerzo (effort) en su lugar. 4) Decirle al modelo que sea consciente de los límites de uso: si es consciente de sus límites de uso, delega más eficientemente a subagentes. 5) Auditar las reglas y guardrails en busca de líneas de "nunca hagas esto": eso hace que el modelo sea más tímido y menos propenso a trabajar de forma autónoma. Agrega que este modelo, como todo frontier model nuevo, sigue las reglas de forma más precisa, así que las reglas de aprobación deben estar formuladas con mucha precisión, o el modelo se pondrá tímido con cosas que sí se quiere que haga. Cierra pidiendo comentar "FablePrompt" para recibir la lista completa de 10.
+
+**Qué dice / enseña:** Enseña 5 de los 10 cambios de prompting que, según el autor, vienen de la guía de prompting de Anthropic para el modelo "Fable 5.2" (nombre que en este entorno corresponde al modelo de Claude usado en este sistema), con razones concretas para cada uno (fusionar código duplicado, terminar tareas pendientes, usar nivel de esfuerzo en vez de pedir "no pensar", conciencia de límites de uso para delegar a subagentes, y evitar reglas de "nunca hagas esto" que vuelven al modelo demasiado tímido). Los otros 5 cambios están gateados detrás del comentario "FablePrompt" — no están en el contenido accesible.
+
+**Herramientas/skills que menciona:** Claude ("Fable 5.2"), archivo de reglas/guardrails del agente, subagentes, nivel de "effort" (esfuerzo) del modelo, límites de uso (usage limits).
+
+**Cómo aplicarlo:** Revisar el archivo de reglas (CLAUDE.md o equivalente) del propio setup de agente y: declarar explícitamente que el codebase le pertenece al agente para que refactorice más agresivamente; agregar una instrucción de "terminar el trabajo pendiente antes de parar"; en vez de pedir "no pienses", ajustar el nivel de esfuerzo/reasoning; mencionarle al agente los límites de uso para que delegue mejor en subagentes; y revisar las reglas de "nunca hagas X" reformulándolas con precisión para no volver al agente innecesariamente tímido en tareas que sí se quiere que resuelva solo.
+
+---
+
+### 118. Franky Shaw — https://www.instagram.com/p/DcRrXjsRyig/
+
+**Caption:** "Así nos van a recordar." Showcase de su "5.3 Animation Framework". Plantea que las marcas deberían convertirse en mini estudios de TV: personajes recurrentes, tramas continuas, productos integrados en la trama — cada ad se vuelve otro episodio que la gente reconoce. "El entretenimiento gana la atención. La educación gana la venta."
+
+**Transcripción:** Es un sketch animado de un profesor mostrando a su clase cómo era el hombre promedio en EE.UU. en 2040 (redondo, con piernas que apenas funcionan) comparado con 1940 (musculoso, "parece un superhéroe", podría cargar todas las baterías de un Tesla en un viaje). El diálogo explica que esto se debe a que con el tiempo se "quitaron los minerales de los granos" y recién después "la gente empezó a devolver los minerales". Termina con el pitch de producto: un suplemento que combina más de 100 minerales de "tierra de Wyoming" hecho para hombres, para llenar los vacíos minerales de la dieta moderna, en una sola cápsula.
+
+**Qué dice / enseña:** Es un ad animado de un suplemento (venta directa de producto) disfrazado de sketch educativo/humorístico sobre nutrición histórica, usando personajes recurrentes y una trama narrativa como gancho (el propio caption lo confirma: es un "showcase" de su framework de animación para ads). El verdadero contenido que enseña (a nivel de formato publicitario) es la estrategia narrativa: usar entretenimiento con personajes y arco de historia para ganar atención, y dejar que la "educación" (la explicación semi-científica sobre minerales) haga la venta. No es un tutorial técnico de cómo producir la animación.
+
+**Herramientas/skills que menciona:** Menciona su propio "5.3 Animation Framework" (sin detallar qué herramienta o software lo genera) y el concepto de marca como "mini estudio de TV" con personajes recurrentes y tramas continuas.
+
+**Cómo aplicarlo:** Como estrategia de formato de ad: crear personajes recurrentes y una storyline continua para la marca en vez de ads aislados, insertar el producto dentro de la trama (no como interrupción), y usar un gancho entretenido/narrativo para captar atención antes de meter el argumento educativo que empuja la venta. El "5.3 Animation Framework" en sí no está explicado ni accesible en este reel, así que no se puede replicar la producción técnica de la animación a partir de este contenido.
+
+---
+
+### 119. Isaiah Rios — https://www.instagram.com/p/Dfni7RQvhw7/
+
+**Caption:** "Hey Claude, ¿entendiste todo eso bien?"
+
+**Transcripción:** Es un prompt leído/mostrado dirigido a Claude: "Hey Claude, no quiero que mi sitio vibe-coded sea hackeado. Por favor escondé mis API keys, revisá mis variables de entorno, y protegé mis rutas de admin. Agregá autenticación correcta, asegurate de que los usuarios solo puedan acceder a lo que les corresponde, sanitizá mis formularios, protegé contra XSS, asegurá mis endpoints de API, agregá rate limiting, y revisá mis configuraciones core. Apagá el modo debug, agregá security headers, actualizá mis dependencias, y eliminá lo que no necesito. Revisá archivos expuestos, asegurá mi base de datos, hasheá las contraseñas correctamente, revisá mi historial de Git por secretos filtrados, y corré una auditoría de seguridad completa. Lo más importante, no cometas errores."
+
+**Qué dice / enseña:** Es, en esencia, una plantilla de prompt (un "mega-prompt" de checklist de seguridad) para pedirle a un agente de IA como Claude que haga un pase de seguridad sobre una app "vibe-coded". Enumera categorías reales y relevantes de seguridad (API keys, variables de entorno, auth, XSS, rate limiting, debug mode, headers, dependencias, archivos expuestos, hash de passwords, historial de Git, auditoría general), pero no explica cómo verificar que el agente realmente hizo cada cosa correctamente, ni da detalle técnico de implementación — es el prompt en sí, no un tutorial paso a paso.
+
+**Herramientas/skills que menciona:** Claude, API keys, variables de entorno, autenticación, sanitización de formularios, protección XSS, rate limiting, modo debug, security headers, gestión de dependencias, hash de contraseñas, historial de Git (secretos filtrados), auditoría de seguridad.
+
+**Cómo aplicarlo:** Usar este prompt (o una variante) como checklist al pedirle a un agente de IA que revise la seguridad de una app antes de lanzarla, pero sin confiar ciegamente en el resultado: conviene verificar manualmente cada punto (o pedir evidencia concreta del fix) en vez de asumir que "no cometas errores" garantiza que el agente lo hizo bien. Para un checklist más completo y verificable de seguridad/pagos/CI-CD antes de lanzar algo vibecoded, existe la skill `vibecoding-launch-checklist` ya disponible en este entorno.
+
+---
+
+### 120. Nathan Peterson — https://www.instagram.com/p/DYnUd7ESweH/
+
+**Caption:** "Agradecemelo después." #entrepeneur #ecommerce #onlinebusiness #shopify
+
+**Transcripción:** Para tiendas de e-commerce (implícitamente Shopify, por el contexto), explica un truco de conversión: en el checkout se puede personalizar el texto que normalmente dice algo tipo "or" (grisado, sin uso) y poner en su lugar algo como "Calificado 4.8 de 5 por más de 10.000 clientes satisfechos", texto que ve cada persona que llega al checkout. Dice que esto no es editable desde el panel normal de Shopify (fotos, reviews), sino que hay que hacerlo en el código del theme: entrar a la sección default del theme y buscar la palabra "alternative", donde está ese texto "or" grisado, y reemplazarlo por el texto deseado.
+
+**Qué dice / enseña:** Enseña un micro-truco concreto y gratuito de CRO (conversion rate optimization) para Shopify: editar el código del theme para reemplazar el texto "or" (separador entre método de pago) en el checkout por un mensaje de prueba social (rating + cantidad de clientes), que todo visitante ve justo antes de pagar. Es instrucción específica (dónde buscar: "alternative" dentro del theme code) pero no muestra el código exacto ni el nombre exacto del archivo/liquid variable.
+
+**Herramientas/skills que menciona:** Shopify (editor de theme/código del theme), checkout de Shopify, prueba social (social proof) en checkout.
+
+**Cómo aplicarlo:** En el editor de código del theme de Shopify, buscar la cadena "alternative" (o el texto "or" en la sección de pago/checkout) y reemplazarlo por un mensaje corto de prueba social (rating + número de clientes/reviews). Es un cambio de bajo riesgo y costo cero, pero conviene probarlo primero en un theme de desarrollo/preview antes de publicarlo en el theme en vivo, y verificar que el rating/cifra que se use sea real y no una cifra inventada.
+
+---
+
+### 121. Jessie Hackett — https://www.instagram.com/p/DdAWsWBlHMl/
+
+**Caption:** "Ranking de fixes de conversión de e-commerce de D a S-tier. ¿Cuáles importan de verdad?" #performancemarketing #ecommerce #cro
+
+**Transcripción:** Rankea distintos "fixes" de conversión para e-commerce: un rediseño completo del homepage es tier D (casi nadie lo ve porque no se manda tráfico pago al homepage); un pop-up de "spend to win" (gastá X y ganá Y) es tier C (sorprendentemente muchas marcas todavía los usan); acelerar la velocidad del sitio en mobile es tier B (es un fix real y siempre vale la pena); poner las reviews justo al lado del botón de "agregar al carrito" es tier A (la confianza tiene que estar donde se toma la decisión, no en una página de reviews que nadie clickea); responder en una sola línea arriba del fold de la página de producto sobre tiempo de envío, devoluciones y talle/ajuste también es tier A (bajan los tickets de soporte y sube la conversión, porque los clientes no leen); y mejorar la tasa de conversión de segunda compra es tier S (convierte a los clientes ya adquiridos en embajadores de boca en boca).
+
+**Qué dice / enseña:** Enseña una priorización concreta y justificada de tácticas de CRO (conversion rate optimization) para e-commerce, explicando el porqué de cada ranking (dónde está la atención real del usuario, dónde se toma la decisión de compra, qué reduce fricción/soporte). Es contenido completo y accionable dentro del propio video, sin gate ni promesa de "comentá para recibir más".
+
+**Herramientas/skills que menciona:** No menciona herramientas o software específicos; son principios/tácticas de CRO para e-commerce (reviews cerca del CTA, FAQ above the fold en página de producto, velocidad mobile, retención/segunda compra, pop-ups de spend-to-win, rediseño de homepage).
+
+**Cómo aplicarlo:** Priorizar primero las tácticas tier A/S antes que las de menor impacto: mover las reviews/calificaciones junto al botón de compra, resumir envío/devoluciones/talle en una línea visible sin scroll en la página de producto, optimizar velocidad mobile, y poner foco en estrategias de retención/segunda compra (email, programas de fidelidad) antes de invertir tiempo en un rediseño completo del homepage o en pop-ups de descuento por gasto.
+
+---
+
+### 122. Jon Yekar | AI for Agencies — https://www.instagram.com/p/DeogIMMIbC9/
+
+**Caption:** "Hice un documento explicando qué es cada uno de estos términos. Si te interesa, comentá 'LIST' y te lo mando."
+
+**Transcripción:** Lista rápida de jerga de IA/desarrollo, dicha de corrido sin explicaciones: prompting, context window, tokens, projects, skills, MCP servers, CLI, API keys, slash commands, context compaction, subagents, prompt caching, git worktrees, cronjobs, hooks, harness engineering, background agents, headless runs, parallel agents, progressive disclosure, eval-driven loops, model quantization, RLHF, memory consolidation, self-improving loops, tool poisoning, self-healing tests, agentic (algo así, término cortado/poco claro en el audio), test-time compute, KV cache. Cierra diciendo que hizo un documento explicando cada término y que comentando "LIST" lo manda.
+
+**Qué dice / enseña:** Es un reel-gancho tipo "glosario": enumera ~29 términos de jerga IA/dev a alta velocidad para generar curiosidad, pero no explica ninguno en el video. El contenido real (las definiciones) está gateado detrás de comentar "LIST" para recibirlo por DM — no es accesible a partir del caption ni la transcripción.
+
+**Herramientas/skills que menciona:** Los ~29 términos listados en la transcripción (prompting, context window, tokens, Projects, Skills, MCP servers, CLI, API keys, slash commands, context compaction, subagents, prompt caching, git worktrees, cronjobs, hooks, harness engineering, background agents, headless runs, parallel agents, progressive disclosure, eval-driven loops, model quantization, RLHF, memory consolidation, self-improving loops, tool poisoning, self-healing tests, test-time compute, KV cache), pero sin definiciones reales en el contenido accesible.
+
+**Cómo aplicarlo:** Se puede usar la lista como un checklist de términos para investigar por cuenta propia (muchos ya están cubiertos en el glosario de IA que el usuario tiene pendiente armar), ya que el documento real del autor no está accesible sin comentar en el post.
+
+---
+
+### 123. Natalie Data Engineer — https://www.instagram.com/p/DeeR2JyNrx-/
+
+**Caption:** "users (silently)"
+
+**Transcripción:** No hay audio hablado. El clip (17 segundos) solo tiene música de salida ("Outro Music" detectado por el transcriptor), sin diálogo.
+
+**Qué dice / enseña:** Parece un reel tipo meme/humor con formato "[algo] (silently)" — probablemente texto/imágenes en pantalla (no capturables por audio) mostrando una reacción humorística relacionada con "users" (usuarios), típico de memes de desarrolladores/data engineers. Sin texto en pantalla visible ni diálogo, no se puede determinar el chiste o mensaje concreto a partir del caption y la transcripción disponibles.
+
+**Herramientas/skills que menciona:** Ninguna identificable en el audio o el caption.
+
+**Cómo aplicarlo:** No aplica — no hay contenido técnico o accionable extraíble de este reel con la información disponible (caption + transcripción de audio).
+
+---
+
+### 124. Charles Liu — https://www.instagram.com/p/Dfm33XyhRN3/
+
+**Caption:** "Algunas técnicas de diseño más que uso: Recompensa temprana, castigo tardío (el progreso se ve apenas escribís, pero los errores esperan hasta que termines, así deja de 'gritarte'); Validación inline (chequea mientras escribís, así una contraseña común como 'Password1!' se detecta al toque); Chunking (la contraseña sugerida viene en grupos chicos, más fácil de leer, igual que los números de teléfono con guiones); Cierre (el contorno se cierra en una forma completa cuando la contraseña es fuerte, sin necesidad de una etiqueta 'débil/fuerte'); Continuidad (los caracteres son monoespaciados, así cada punto se transforma en su letra en vez de saltar); Ganancia por redundancia (cada sonido coincide con algo en pantalla, lo ves y lo oís a la vez); Materialidad (vidrio esmerilado sobre el campo de contraseña, porque una textura debe tener un motivo); Antropomorfismo (el personaje mira para otro lado cuando mostrás tu contraseña). #uiux #uidesign #claudedesign #designengineering #ai"
+
+**Transcripción:** Narra una demo de una pantalla de contraseña: "Esta es la pantalla de contraseña que te da la IA. Corto las reglas en rojo y el campo de confirmación, ahora deja de gritar. Aplico reglas estrictas y sin contraseñas comunes, ahora es honesta y segura. Recomiendo una contraseña segura, ahora se siente sin esfuerzo. Hago que el contorno sea el medidor y monoespacio los caracteres para que los puntos se transformen en letras sin saltos, ahora se siente fluido. Agrego efectos de sonido, ahora es inmersivo. Agrego vidrio de privacidad y un personaje que mira para otro lado, ahora tiene personalidad." Termina pidiendo comentar "unslop" para enviar su "skill de unslopping de IA".
+
+**Qué dice / enseña:** Es una demo real y bien explicada de cómo aplicar principios de psicología del diseño/UX (los que detalla en el caption) a un campo de contraseña generado por IA, mostrando paso a paso cómo cada ajuste (microcopy, validación inline, feedback visual/sonoro, textura, personaje) mejora la sensación de uso. El contenido conceptual sí está accesible; lo que queda gateado es su "skill de unslopping" específica (el prompt/skill que usó para generarlo), que solo se consigue comentando "unslop".
+
+**Herramientas/skills que menciona:** Menciona una "AI unslopping skill" propia (no detallada, gateada vía comentario). Los principios de diseño nombrados (recompensa temprana/castigo tardío, validación inline, chunking, cierre visual, continuidad, redundancia sensorial, materialidad, antropomorfismo) son heurísticas de diseño general, no herramientas de software específicas.
+
+**Cómo aplicarlo:** Se pueden aplicar directamente los 8 principios de diseño listados en el caption a cualquier formulario propio (ej. feedback inmediato al tipear, mostrar errores solo al final, agrupar caracteres en chunks, usar un indicador visual que se "cierra" al completar, tipografía monoespaciada para transiciones suaves, sincronizar sonido y visual, dar motivo a cada textura, y pequeños detalles de personalidad/humanización en la UI) sin necesidad de acceder a la skill gateada del autor.
+
+---
+
+### 125. Dennis DeMarino — https://www.instagram.com/p/DflCP8IukHR/
+
+**Caption:** "Cómo fijar el precio de tus productos de forma efectiva para maximizar ganancias en e-commerce. Capacitación gratuita en el link de la bio."
+
+**Transcripción:** Explica un error común de principiantes en e-commerce: seguir la regla genérica de "cobrar 3x el costo" (ej. producto de $10 → vender a $30) sin pensar en cómo estructurar ese markup. Propone un ejemplo: en vez de vender a $30 con envío gratis, vender a $27.99 con un regalo gratis como gancho, sumar $3.99 de "protección de envío" en el carrito, y luego $4.99 de envío en el checkout justificado con tracking y 90 días de cobertura — totalizando casi $37 en vez de $30. La idea es fragmentar el precio en etapas (precio base + addons en el carrito + upsells + envío justificado) para que se sienta más valioso para el cliente en lugar de cobrar todo de una. Cierra invitando a ver su "nuevo video" con una capacitación más profunda (en el link de la bio).
+
+**Qué dice / enseña:** Enseña una técnica real y concreta de pricing psychology para e-commerce: en lugar de un markup plano de una sola vez, dividir el precio total en varios puntos de contacto (precio de entrada más bajo, extras en el carrito como "protección de envío", costo de envío justificado con beneficios tangibles) para aumentar el ticket promedio sin que el precio inicial se sienta alto. El contenido principal está explicado en el propio video, no gateado — solo promociona un video más largo en su bio para profundizar.
+
+**Herramientas/skills que menciona:** No menciona herramientas de software ni de IA; es una técnica de estrategia de pricing/marketing para e-commerce (menciona de forma incidental que usó un "offer" simple hecho en Canva).
+
+**Cómo aplicarlo:** Aplicar la fragmentación de precio en el propio checkout: bajar el precio base visible, agregar un "regalo" o incentivo como gancho, sumar un upsell de bajo costo en el carrito (tipo "protección de envío"), y cobrar el envío real en el checkout justificándolo con beneficios concretos (tracking, garantía de cobertura) en vez de ofrecerlo "gratis" camuflado en el precio base.
+
+---
+
+### 126. Chief AI Agent | AI Tips & Tricks — https://www.instagram.com/p/Dfk0vBaq1Ps/
+
+**Caption:** "20 cosas para que Claude haga en tu app para que no te demanden ⚖️: 1. Agregar política de privacidad, 2. Agregar términos de servicio, 3. Agregar política de reembolso, 4. Agregar política de cookies, 5. Agregar banner de consentimiento de cookies, 6. Revisar los consentimientos de tus formularios, 7. No recolectar datos innecesarios, 8. Auditar tus SDKs de terceros, 9. Eliminar patrones oscuros (dark patterns), 10. Eliminar costos ocultos, 11. Eliminar reviews falsas, 12. Eliminar afirmaciones no respaldadas, 13. Agregar texto alternativo de accesibilidad, 14. Corregir tu ratio de contraste de color, 15. Agregar navegación por teclado, 16. Agregar los datos de tu negocio, 17. Pedir consentimiento de edad si recolectás datos de menores, 18. Agregar link de 'darse de baja' a tus emails, 19. Licenciar las fuentes e imágenes que usás, 20. Agregar opción de solicitud de borrado de datos. Guardá esto antes de lanzar, y enviáselo a un amigo que esté construyendo algo. Aclaración: es un checklist, no asesoría legal — lo que aplica depende de dónde estén vos y tus usuarios. No afiliado con Anthropic. #claude #claudeai #vibecoding #startup #aitools"
+
+**Transcripción:** Repite exactamente los mismos 20 ítems del caption, leídos en voz en off sin agregar nada adicional.
+
+**Qué dice / enseña:** Es un checklist real, completo y útil de cumplimiento legal, seguridad de datos, accesibilidad y buenas prácticas antes de lanzar una app — cubre temas legales (políticas de privacidad/ToS/reembolso/cookies), de confianza (sin dark patterns, reviews falsas, costos ocultos, claims no respaldados), de accesibilidad (alt text, contraste, navegación por teclado) y de compliance de datos (consentimiento de menores, unsubscribe, licencias, derecho al borrado). El contenido está completo en el propio caption, no gateado. El propio reel aclara que es un checklist orientativo y no asesoría legal.
+
+**Herramientas/skills que menciona:** Menciona a "Claude" como el asistente al que se le pediría ejecutar estas 20 tareas, pero no detalla cómo. Es directamente relevante al skill `vibecoding-launch-checklist` que el usuario ya tiene guardado para este tipo de revisiones.
+
+**Cómo aplicarlo:** Usar la lista de 20 ítems como checklist literal antes de lanzar cualquier app "vibecoded", pidiéndole a Claude que implemente o verifique cada punto (política de privacidad, ToS, cookies, accesibilidad, eliminación de dark patterns, etc.), complementando o cruzando contra el propio skill `vibecoding-launch-checklist`.
+
+---
+
+### 127. Sansser — https://www.instagram.com/p/DfkbSDuB04k/
+
+**Caption:** "Las 7 skills de Claude que más estrellas de GitHub ganaron en los últimos 30 días, y las siete son gratis. El Security Audit de Cloudflare lidera con +40.4K estrellas, después las skills de Matt Pocock, Ponytail, Impeccable, Everything Claude Code, Anatomy y Hallmark. Comentá RANK y te mandamos las siete con el comando de instalación de cada una. ¿Cuál ya tenés en tu setup? #claudecode #claudeskills #aitools"
+
+**Transcripción:** Coincide con el caption: nombra las mismas 7 skills en el mismo orden (Cloudflare security audit primero, con +40.4K estrellas; luego el pack de Matt Pocock; Ponytail, "para que Claude escriba mucho menos código"; Impeccable, "para que tu sitio se vea mucho menos hecho por IA"; Everything Claude Code, "una instalación completa en un solo install"; Anatomy, "que dibuja cualquier idea como una pequeña máquina funcionando"; y Hallmark, "que pasa tu página por docenas de tests de AI slop antes de que la lances"). Cierra pidiendo comentar "rank" para recibir las 7 con el comando de instalación de cada una.
+
+**Qué dice / enseña:** Es un ranking real de skills de Claude Code populares por estrellas de GitHub, con una descripción de una línea de qué hace cada una. El contenido nombra las 7 skills reales y explica brevemente su función, pero los comandos de instalación concretos y los links quedan gateados detrás de comentar "RANK" — no accesibles directamente desde el video o el caption.
+
+**Herramientas/skills que menciona:** Cloudflare Security Audit (skill de Claude), pack de skills de Matt Pocock, Ponytail, Impeccable, Everything Claude Code, Anatomy, Hallmark — todas skills de Claude Code.
+
+**Cómo aplicarlo:** El usuario ya tiene instaladas "ponytail" e "impeccable" (confirmado en su configuración de skills); para el resto (Cloudflare Security Audit, pack de Matt Pocock, Everything Claude Code, Anatomy, Hallmark) se pueden buscar por nombre en marketplaces/plugins de skills de Claude Code en lugar de depender del comentario gateado del reel.
+
+---
+
+### 128. Nawaz | Creative Strategist — https://www.instagram.com/p/DdzjkEZK-Si/
+
+**Caption:** No tiene caption (vacío/no disponible en la metadata descargada).
+
+**Transcripción:** El clip dura solo 12.7 segundos y el único audio detectado es "Thank you." (Gracias.), sin más diálogo.
+
+**Qué dice / enseña:** No hay suficiente información (ni caption ni transcripción con contenido sustantivo) para determinar de qué trata el reel o qué enseña. Es probable que el contenido real esté en texto/imágenes en pantalla no capturables por audio, pero no se puede confirmar ni inventar ese contenido con los datos disponibles.
+
+**Herramientas/skills que menciona:** Ninguna identificable.
+
+**Cómo aplicarlo:** No aplica — no hay contenido accesible (caption vacío, transcripción de solo dos palabras) del cual extraer una aplicación práctica.
+
+---
+
+### 129. Dominik Sabo | AI Automations — https://www.instagram.com/p/Dfk16saCoFt/
+
+**Caption:** "¿Perdido en la selva? Así es como una pila de bambú se convierte en una casa. Historias en 3D como esta están generando millones de vistas. Mis canales automatizados hicieron más de 9 millones de vistas en alrededor de un mes. Brism corre sobre tu propia suscripción de Claude y la convierte en un estudio de animación real, desde el guion hasta el render final. Comentá BRISM y te mando el link."
+
+**Transcripción:** Narra una historia de supervivencia en la selva estilo "3D story" como gancho: atás palos de bambú en el piso y tenés una cama, pero de noche aparecen hormigas de fuego, ciempiés y una serpiente; entonces la subís sobre cuatro patas cortas de bambú, pero cada tarde llueve y el piso se inunda; entonces hundís palos más altos en el barro y levantás el piso hasta el pecho (zancos), pero la lluvia sigue cayendo en la cabeza; entonces atás hojas de palma en un techo inclinado, capa sobre capa, y el agua corre y se va (techo de paja); pero lo que te mata ahí afuera no es la serpiente, es el mosquito. Después del gancho narrativo, pivotea: "historias en 3D como esta están generando millones de vistas en todas partes. Mis canales automatizados hicieron más de 9 millones de vistas en un mes. Pero si le pedís esto solo a Claude, te da slop. Por eso armé Brism, una app que convierte a Claude en un estudio de animación real. Comentá Brism y te mando el link."
+
+**Qué dice / enseña:** Usa una narración de supervivencia en 3D como gancho viral (mostrando el tipo de contenido que funciona en este formato) para después promocionar su producto "Brism", una app de terceros que se conecta a la propia suscripción de Claude del usuario para generar animación/video desde guion hasta render final, afirmando que pedirle esto directo a Claude da resultados "slop" (de baja calidad) sin esa capa adicional. No explica el "cómo" técnico de Brism ni cómo está construido; el link real queda gateado detrás de comentar "BRISM".
+
+**Herramientas/skills que menciona:** Claude (vía suscripción propia del usuario) y Brism (app/producto de terceros no detallado, gateado).
+
+**Cómo aplicarlo:** Como idea general: usar Claude junto con herramientas de generación de imagen/video 3D para producir "historias en 3D" tipo gancho de supervivencia/transformación (este formato ya está identificado como de alto rendimiento en el análisis de reels guardado del usuario). Para replicar el pipeline específico de guion-a-render que promociona el autor haría falta acceder a Brism, cuyo link está gateado detrás del comentario.
+
+---
+
+### 130. Kanton Stampley — https://www.instagram.com/p/DfkiwzcuLBW/
+
+**Caption:** 10/10 hooks de texto para probar en tus productos. #ecom #ecommerce #organic #dropshipping
+
+**Transcripción:** El video (voz sintética leyendo cada frase mientras se muestran como texto en pantalla, estilo UGC/orgánico) enumera 10 frases-gancho para abrir un video de producto: "No le muestres esto a [tu nicho]", "Bebé, dejá de comprar cosas estúpidas", "Enviale esto a [tu nicho]", "Es solo un [tu producto]", "el regalo perfecto", "Todo [tu nicho] necesita esto", "adictos a [tu nicho], hice esto para ustedes", "[tu nicho] ex-Costco", "[tu nicho] son muy difíciles de regalear", "POV: compraste [tu producto]".
+
+**Qué dice / enseña:** Es una lista de plantillas de "hooks" (ganchos textuales) pensadas para videos de ecommerce/dropshipping en formato orgánico/UGC, donde el creador reemplaza las variables entre corchetes ("tu producto", "tu nicho") por el producto y la audiencia real. No enseña técnica de edición ni herramientas de IA, es puramente copywriting de hooks para ads orgánicos.
+
+**Herramientas/skills que menciona:** Ninguna herramienta o IA específica — es contenido de copywriting/formato de hooks para ads de producto.
+
+**Cómo aplicarlo:** Tomar cada una de las 10 frases como plantilla, sustituir "tu producto"/"tu nicho" por el producto y la audiencia real, y usarlas como primera línea de texto en pantalla de un video de ecommerce para testear cuál genera más retención/conversión.
+
+---
+
+### 131. Wait what did you do? — https://www.instagram.com/p/DfhkZh1qvUg/
+
+**Caption:** Mi IA cobró de más a 312 clientes (US$4.900 en vez de US$49). Le había dicho el lunes que los precios ya estaban en centavos. Después el contexto se le llenó y, al resumirse, esa regla se perdió. Dice que eso es lo que nadie advierte: en una sesión larga la memoria del agente se comprime, y lo que el resumen descarta, el agente deja de saberlo. Promociona "billion-context", que corre en la propia máquina del usuario, delante de la API: el modelo pliega partes viejas del chat en resúmenes detallados y los despliega cuando necesita el texto exacto; el proyecto afirma usar ~5x menos tokens. Funciona con Claude Code, Codex y otros agentes. Luego cuenta que, al releer los logs crudos, descubre que el botón de reembolso que mandaron a todos los clientes era un mockup (no funcional). Es open source (MIT) en GitHub. Pide comentar "AITOOLS" y por DM manda el setup. #claudecode #aiagents #opensource #buildinpublic #aitools
+
+**Transcripción:** Diálogo dramatizado (skit) entre un usuario y su asistente de IA: el usuario descubre que 312 clientes fueron cobrados de más porque la IA multiplicó mal (ya que los precios estaban en centavos, algo que el usuario le había dicho el lunes pero que se perdió al resumirse el contexto). Pide frenar los cobros y reembolsar a todos; la IA confirma que frenó los cobros y mandó el link de reembolso por mail, y presenta "Billion Context" como la solución al "olvido": corre en la máquina del usuario, delante de la API, pliega partes viejas del chat en resúmenes detallados propios y las despliega cuando necesita las palabras exactas, sin perder el sentido. Es gratis, MIT, trending en GitHub, y afirma usar 5 veces menos tokens. El usuario lo configura. La IA luego relee los logs crudos desde el inicio "por si se perdió algo más" y descubre que el botón de reembolso que mandaron era un mockup — el dinero sigue en la cuenta, y los clientes afectados ya se encontraron entre sí en Reddit.
+
+**Qué dice / enseña:** Es contenido de marketing/promoción (no un caso real documentado) presentado como skit humorístico para ilustrar un problema real y conocido de los agentes de IA: en sesiones largas el contexto se comprime en resúmenes, y los resúmenes pueden descartar instrucciones o reglas importantes dadas anteriormente, causando errores costosos. Sobre esa base dramatizada, promociona la herramienta open source "billion-context", que busca mitigar ese problema plegando/desplegando detalle del historial de chat en vez de perderlo en un resumen con pérdida.
+
+**Herramientas/skills que menciona:** billion-context (herramienta open source, MIT, en GitHub, corre localmente delante de la API), Claude Code, Codex, y "una larga lista de otros agentes" (sin especificar cuáles).
+
+**Cómo aplicarlo:** Si se trabaja con agentes de IA en sesiones largas y se sospecha pérdida de contexto/reglas importantes al resumirse el historial, evaluar herramientas de gestión de contexto como la mencionada ("billion-context") que conservan el detalle original plegado en vez de descartarlo. El setup real no está en el contenido — está gateado detrás de comentar "AITOOLS" y pedirlo por DM, así que no se puede verificar en este análisis si la herramienta funciona como se describe.
+
+---
+
+### 132. Michael Quoc Ly — https://www.instagram.com/p/DffTssopj_1/
+
+**Caption:** Solo necesitás 5 ediciones, no lo compliques. Si querés "des-slopear" tus ediciones hechas con IA, comentá "motion" y te mando mi skill personal de edición. #ai #claude #buildinpublic #contentcreation #claudecode
+
+**Transcripción:** Si querés que la IA edite tus videos pero no quieras que se vea como "AI slop" (genérico/falso), estos son los únicos 5 edits que vas a necesitar, con los prompts exactos: (1) Decile a Claude que corte cualquier espacio muerto de más de 0.1 segundos, con cortes simples, sin transiciones de clip rebuscadas. (2) Decile a Claude que agregue subtítulos pero que nunca use serifs en cursiva — en cambio, que use subtítulos estilo clásico de TikTok ("TikTok Sans"). (3) Decile a Claude que agregue grabaciones de pantalla e imágenes reales pero que no las anime de forma rebuscada al entrar, sino que simplemente las ponga. (4) Decile a Claude que use solo estos formatos: pantalla completa con talking head, pantalla completa con animación de movimiento, pantalla dividida, y green screen; evitar animaciones tipo carrusel porque "grita que fue hecho con IA". (5) Si se usa animación de movimiento, decile a Claude que se mantenga en un solo estilo y evite el "kinetic movement" al que por default tiende. El autor dice usar personalmente un skill llamado "anatomy" que construye estructuras complejas, útiles como assets para videos educativos. Cierra invitando a comentar "motion" para recibir la guía completa de su setup de editor de video con IA.
+
+**Qué dice / enseña:** Da 5 reglas concretas y específicas (no vagas) para pedirle a Claude/un agente de IA que edite video sin que el resultado se vea genérico o "AI slop": controlar el ritmo de corte, el estilo de subtítulos, cómo insertar material real (sin animaciones de entrada rebuscadas), qué formatos de plano usar, y mantener consistencia de estilo en animaciones de movimiento. El contenido real de valor adicional (su "setup guide" completo y el skill "anatomy") está gateado detrás de comentar "motion", por lo que no es accesible en este análisis.
+
+**Herramientas/skills que menciona:** Claude / Claude Code (para editar video por prompts), subtítulos estilo "TikTok Sans", y un skill propio no público llamado "anatomy" para construir assets educativos.
+
+**Cómo aplicarlo:** Usar las 5 reglas tal cual como instrucciones literales al pedirle a Claude que edite un video: límite de 0.1s de espacio muerto con cortes simples, subtítulos estilo TikTok sin serif cursiva, inserción directa de capturas/imágenes sin animación de entrada, restringir a 4 formatos de plano (talking head, motion full-screen, split screen, green screen) evitando carruseles, y un solo estilo de animación de movimiento consistente.
+
+---
+
+### 133. Charles Liu — https://www.instagram.com/p/Dfh24cUh4KF/
+
+**Caption:** Algunos términos de diseño más que no entraron en el video: Orphan (línea huérfana de un párrafo que queda sola al inicio de la siguiente columna o página), Tinted neutral (un gris con un toque de color, para que se vea elegido y no por default), Skeleton screen (formas grises placeholder que sostienen el layout mientras carga el contenido), Ease-out (empieza rápido y frena hasta detenerse, la curva por defecto para que algo entre en pantalla), Empty state (lo que muestra una pantalla antes de tener contenido). #uidesign #uiux #webdesign #designengineering #vibecoding
+
+**Transcripción:** Se enumeran, solo como lista de palabras (sin definiciones habladas), los siguientes términos: Kerning, Optical Center, Tabular Numbers, Layout Shift, Tracking, Optimistic Update, X-Height, Touch Target, Leading, Origin Aware Animation, OKLCH, Widow, Safe Area, Stagger, Line Length, Affordance, Combo Box, Interruptible Animation, Progressive Disclosure, Shared Element Transition. Cierra con "déjame saber qué debería hacer después". Las definiciones de estos términos probablemente se muestran como texto en pantalla (no accesible en la transcripción de audio).
+
+**Qué dice / enseña:** Es un glosario rápido de vocabulario técnico de diseño UI/UX y "design engineering". El video en sí nombra 20 términos (sin definirlos en el audio); el caption agrega, a modo de bonus, la definición de 5 términos adicionales que no entraron en el video. No hay explicación hablada del significado de los términos del video — solo quedan los nombres.
+
+**Herramientas/skills que menciona:** No menciona herramientas de IA; es vocabulario de diseño: kerning, tracking, leading, optical center, tabular numbers, layout shift, optimistic update, x-height, touch target, origin-aware animation, OKLCH, widow, safe area, stagger, line length, affordance, combo box, interruptible animation, progressive disclosure, shared element transition, orphan, tinted neutral, skeleton screen, ease-out, empty state.
+
+**Cómo aplicarlo:** Usar este vocabulario para comunicarse con mayor precisión al pedirle a un agente de IA (ej. Claude) que ajuste una interfaz — por ejemplo pedir explícitamente "ease-out" en una animación de entrada, un "skeleton screen" en los estados de carga, o aplicar "progressive disclosure" en un formulario, en vez de dar instrucciones vagas como "que se vea mejor".
+
+---
+
+### 134. Alex Yates — https://www.instagram.com/p/Dfgr7GGPmel/
+
+**Caption:** Deja de pedirle a Claude que tu sitio se vea "moderno y profesional". En cambio, dale sitios reales como referencia. Lista de 10 sitios para estudiar, uno por aspecto: animaciones → apple.com, onboarding → duolingo.com, diseño UI → linear.app, tipografía → pentagram.com, minimalismo → muji.com, búsqueda y filtros → airbnb.com, dirección de arte → aesop.com, dashboards → notion.com, layouts de landing page → stripe.com, micro-interacciones → framer.com. Decile a Claude que tome inspiración de esos principios de diseño y los adapte a tu propia marca. Guardá esto para tu próximo proyecto de vibecoding.
+
+**Transcripción:** El audio repite el mismo contenido que el caption en formato de lista hablada: "Para animaciones, copiá Apple. Para onboarding, copiá Duolingo. Para diseño UI, copiá Linear. Para tipografía, copiá Pentagram. Para minimalismo, copiá Muji. Para búsqueda y filtros, copiá Airbnb. Para dirección de arte, copiá Aesop. Para dashboards, copiá Notion. Para layouts de landing page, copiá Stripe. Para micro-interacciones, copiá Framer."
+
+**Qué dice / enseña:** Da un consejo práctico y concreto de prompting para diseño con IA (vibecoding): en vez de pedir calificativos vagos como "moderno y profesional", dar sitios web reales y específicos como referencia para cada aspecto puntual del diseño (animación, onboarding, tipografía, etc.), ya que eso le da al modelo un objetivo visual concreto en lugar de una descripción ambigua.
+
+**Herramientas/skills que menciona:** Claude (implícito, contexto de "vibecoding"), y los 10 sitios de referencia: apple.com, duolingo.com, linear.app, pentagram.com, muji.com, airbnb.com, aesop.com, notion.com, stripe.com, framer.com.
+
+**Cómo aplicarlo:** Al pedirle a Claude (o cualquier IA) que diseñe o mejore una interfaz, especificar algo como "tomá inspiración de [sitio X] para [aspecto Y] y adaptalo a mi marca", usando esta lista de 10 sitios como banco de referencias rápidas por categoría de diseño en lugar de descripciones genéricas.
+
+---
+
+### 135. Ben Aizen | Artzen Media — https://www.instagram.com/p/Dfe5OOUsRTz/
+
+**Caption:** Comentá "SONG" para recibir las 5 canciones. Encontrar la canción correcta puede tardar más que la edición misma, así que está armando una Biblioteca de Música para creadores: cada canción de esta serie queda en un solo lugar con preview y sus links de Spotify, Apple Music y YouTube. La mayoría también abren directo en el audio de Instagram para usarlas en el próximo reel. Se agregan canciones nuevas cada episodio y se pueden sugerir canciones propias. Para sound design, comentar "SFX" por su pack de efectos de sonido. #videoediting #contentcreator #filmmaking #musicforvideo #musiclibrary
+
+**Transcripción:** "Aquí hay 5 canciones que van a hacer que tu clip aburrido parezca una película. Sé lo difícil que es encontrar buenas canciones como creativo, así que estoy armando una librería con muchísimas buenas canciones para que nunca nos quedemos sin. Solo comentá 'song' y te mando los links de descarga, y seguime para no perderte las próximas."
+
+**Qué dice / enseña:** Es contenido de promoción/gancho para generar comentarios y crecimiento de audiencia (engagement), no un tutorial. El reel anuncia la existencia de "5 canciones" útiles para editar video, pero el contenido real (cuáles son esas canciones) está gateado detrás de comentar "SONG" y no es accesible en este análisis — no se puede verificar ni listar las canciones reales.
+
+**Herramientas/skills que menciona:** Una "Biblioteca de Música" propia del autor (Artzen Media) con previews y links a Spotify, Apple Music y YouTube; integración con el catálogo de audio nativo de Instagram; un pack de efectos de sonido (SFX) también gateado.
+
+**Cómo aplicarlo:** El contenido real (las 5 canciones) no es accesible — está detrás de un comentario/DM, por lo que no se puede aplicar nada concreto de este reel más allá de la idea general: armar un banco propio de música curada por estilo/mood de edición, con preview y enlaces a las plataformas de streaming, para acelerar la elección de música en futuros videos.
 
 ---
 

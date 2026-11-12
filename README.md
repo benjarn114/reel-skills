@@ -25,3 +25,7 @@ Claude Code las detecta automáticamente y las usa cuando el pedido encaja con l
 - [`cosas-para-tener-en-cuenta.md`](cosas-para-tener-en-cuenta.md) — todo lo que no se convirtió en skill (vocabulario de prompts para imagen/video con IA, teoría de color, microinteracciones de UI, herramientas mencionadas pero gateadas detrás de "comentá para que te lo mande por DM").
 
 No se incluye el audio/video descargado de los reels originales (son ~64MB y no hay motivo para redistribuirlos) — solo texto de caption y transcripción, usados para el análisis.
+
+## Todo mi setup de Claude Code
+
+- [`my-claude-setup/`](my-claude-setup/) — todas las skills instaladas a nivel usuario (menos las que ya vienen por default con Claude Code), la lista de plugins instalados con su marketplace de origen, y el `CLAUDE.md` global. Pensado para reinstalar todo en otra PC — ver [`my-claude-setup/PLUGINS.md`](my-claude-setup/PLUGINS.md) para los pasos. No incluye API keys, settings.json ni nada de otras carpetas/proyectos personales.
